@@ -1,0 +1,108 @@
+.lameimagetextsimple {
+
+  @media #{$ipadpro} {
+    margin: 0 10px;
+  }
+
+  video {
+    max-width: 512px !important;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 6em;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+    @media #{$max-sm} {
+      margin-bottom: 25px;
+    }
+
+    .quote {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: -20px;
+      top: -1em;
+
+      @media #{$max-sm} {
+        top: 1em;
+      }
+    }
+
+    .illustration {
+      grid-column: span 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 512px;
+      margin-left: 1em;
+      min-height: 341px;
+
+      &.mobileon {
+        display: none;
+      }
+
+      &.mobileoff {
+        display: block;
+      }
+
+      @media #{$max-sm} {
+        grid-column: span 2;
+        height: 200px;
+        min-height: 0px;
+        margin-right: 1em;
+        padding: 20px 0;
+
+        &.mobileon {
+          display: block;
+        }
+
+        &.mobileoff {
+          display: none;
+        }
+      }
+    }
+
+    .realisation {
+      grid-column: span 1;
+      padding-left: 0em;
+      padding-right: 0em;
+      align-self: center;
+      justify-self: center;
+      position: relative;
+      font-weight: 300;
+
+      @media #{$ipadpro} {
+        padding-left: 3em;
+      }
+
+      &.left {
+        padding-left: 2em;
+
+        @media #{$max-sm} {
+          padding-left: 0em;
+        }
+      }
+
+      @media #{$max-sm} {
+        padding: 0 15px 15px 15px;
+        grid-column: span 2;
+      }
+    }
+
+    .img {
+      position: relative;
+      &.right {
+        text-align: right;
+        img {
+          max-width: 512px;
+        }
+      }
+
+      @media #{$max-sm} {
+        grid-column: span 2;
+      }
+    }
+  }
+}

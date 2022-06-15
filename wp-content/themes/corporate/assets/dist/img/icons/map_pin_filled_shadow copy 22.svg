@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="52px" viewBox="0 0 34 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ico/map_pin_filled_shadow copy 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-10.1%" y="-63.8%" width="120.2%" height="227.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="A_HP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A_HP_V1" transform="translate(-249.000000, -2035.000000)">
+            <g id="map" transform="translate(-2.000000, 1787.000000)">
+                <g transform="translate(0.000000, 2.000000)" id="ico/map_pin_filled_shadow">
+                    <g transform="translate(237.000000, 242.000000)">
+                        <g id="ico/grey/pin_filled" stroke-width="1" transform="translate(14.880000, 2.480000)" fill="#01513B">
+                            <path d="M17.36,47.864 C17.1961171,47.864 17.091872,47.8591852 16.9523404,47.8355548 C16.6893283,47.7910124 16.455845,47.693956 16.2579192,47.4927898 C6.34392989,37.2251687 1.736,28.9531913 1.736,17.6 C1.736,8.83974118 8.72698339,1.736 17.36,1.736 C25.9930166,1.736 32.984,8.83974118 32.984,17.6 C32.984,28.9531913 28.3760701,37.2251687 18.4571363,47.497862 C18.264155,47.693956 18.0306717,47.7910124 17.7676596,47.8355548 C17.628128,47.8591852 17.5238829,47.864 17.36,47.864 Z M17.36,24.056 C21.007282,24.056 24.056,21.007282 24.056,17.36 C24.056,13.712718 21.007282,10.664 17.36,10.664 C13.712718,10.664 10.664,13.712718 10.664,17.36 C10.664,21.007282 13.712718,24.056 17.36,24.056 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                        </g>
+                        <ellipse id="Oval" fill-opacity="0.1" fill="#000000" filter="url(#filter-1)" cx="29.76" cy="51.9494737" rx="14.88" ry="2.34947368"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

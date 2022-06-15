@@ -1,0 +1,100 @@
+.main-header {
+  @include display-flex();
+  flex-direction: column;
+  background: #fff;
+  margin: auto;
+  left: 0;
+  top: 0;
+  transition: transform 0.25s ease-in-out;
+  width: 100%;
+  z-index: 300;
+  @include box-shadow(0 0 4px 0 rgba(0,0,0,0.20));
+
+  @media #{$md} {
+    position: relative;
+
+    .logo-huttopiac img {
+      width: 144px;
+    }
+  }
+
+  .container-header {
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-height: 54px;
+    @include display-flex();
+
+    @media #{$md} {
+      align-items: stretch;
+      margin: auto;
+      max-width: $max-width;
+      padding: 0 15px;
+      max-height: 60px;
+    }
+  }
+
+  .container-header {
+    order: 2;
+  }
+
+  .burger-button {
+    order: 1;
+  }
+
+  .logo-huttopiac {
+    order: 2;
+  }
+
+  .top-nav.-mobile {
+    order: 3;
+  }
+
+  @media #{$md} {
+    .burger-button {
+      order: -1;
+    }
+
+    .logo-huttopiac {
+      order: 1;
+      padding-top: 16px;
+    }
+
+    .main-nav.-desktop {
+      order: 2;
+    }
+
+    .button-book {
+      order: 3;
+    }
+  }
+}
+
+#main-menu {
+
+  &.menu-mobile-opened {
+    @include transform(translateX(0px));
+    display: block;
+    z-index: 9999;
+
+    @media #{$md} {
+      @include transform(translateX(0));
+      display: block;
+    }
+  }
+}
+
+.menu-mobile-opened {
+
+  .menu-level-0 {
+
+    .wrapper-center-select-lang {
+      display: none;
+    }
+  }
+}
+
+

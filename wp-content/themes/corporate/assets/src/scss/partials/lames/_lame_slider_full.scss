@@ -1,0 +1,132 @@
+huttopia-slide.single-site {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+
+    .slides {
+        height: 332px;
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        @media #{$md} {
+            height: 800px;
+        }
+
+        > div {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            opacity: 0;
+            transition: 1s opacity;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+
+        &.lames {
+            height: 300px;
+        }
+    }
+
+    svg {
+        position: absolute;
+        width: 4em;
+        height: 4em;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: $white;
+        opacity: .5;
+        z-index: 9;
+    }
+
+    svg * {
+        pointer-events: none;
+    }
+
+    svg:first-of-type {
+        left: 10px;
+    }
+
+    svg:last-of-type {
+        right: 10px;
+    }
+
+    .previous:hover,
+    .next:hover,
+    .slides > img.active,
+    .thumbnails > div:empty:hover,
+    .thumbnails > div.active:empty {
+        opacity: 1;
+    }
+
+    div.thumbnails {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 9999999;
+        bottom: 10px;
+        width: 100%;
+
+        div.thumbnail {
+            background-color: transparent;
+
+            &:before {
+                display: inline-block;
+                content: '';
+                border-radius: .375rem;
+                height: .75rem;
+                width: .75rem;
+                margin-right: .5rem;
+                background-color: #bdbdbd;
+            }
+
+            &.active {
+                &:before {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+}
+
+.flexible-search-v2 {
+    height: 760px;
+    position: relative;
+
+    .baseline {
+        position: absolute;
+        top: 340px;
+        left: 300px;
+        color: $white;
+
+        @media #{$max-md} {
+            text-align: center;
+            height: 450px;
+            top: 200px;
+            left: 0px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: $white;
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        h3 {
+            color: $white;
+            font-size: 2.6em;
+            margin: 0;
+        }
+
+
+    }
+}

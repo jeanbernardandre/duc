@@ -1,0 +1,437 @@
+.timeline {
+    margin-top: 5em;
+
+    @media #{$max-sm} {
+        margin-top: 0;
+    }
+
+    h2 {
+        @media #{$max-sm} {
+            font-size: 20px;
+            padding: 20px;
+            color: $white;
+            background-color: $lightblack;
+            text-align: center;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    .forSlider {
+        .slick-prev {
+            z-index: 99;
+        }
+    }
+
+    .fleft {
+        width: 100%;
+        float: left;
+
+        .navSlider {
+            display: block;
+        }
+
+        .slick-slide {
+            width: 400px;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .slick-current {
+            opacity: 1;
+
+            .item {
+                box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .8);
+                background-size: cover;
+
+                .buller, .bullel {
+                    display: none;
+                }
+
+                article {
+                    display: block;
+                }
+            }
+        }
+
+        .item {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            height: 600px;
+            position: relative;
+            box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .8);
+
+            .bullel {
+                position: absolute;
+                color: $white;
+                z-index: 9999;
+                opacity: .6;
+                font-size: 36px;
+                top: 100px;
+                left: 46px;
+            }
+
+            .buller {
+                position: absolute;
+                color: $white;
+                z-index: 9999;
+                opacity: .6;
+                font-size: 36px;
+                top: 100px;
+                right: 36px;
+            }
+
+            article {
+                grid-column: span 1;
+                align-content: space-between;
+                justify-content: space-around;
+                display: none;
+
+                &.text {
+                    margin-top: 60px;
+                    margin-left: 106px;
+                    color: $white;
+
+                    h3 {
+                        font-size: 3.8em;
+                        margin: 0;
+                        padding-top: .2em;
+                        padding-bottom: 0;
+                        color: $white;
+                        font-weight: 500;
+
+                        .small {
+                            font-size: .5em !important;
+                        }
+                    }
+
+                    div {
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 1.4em;
+                    }
+                }
+
+                &.image {
+                    width: 5em;
+                    height: auto;
+                    margin-top: 178px;
+                    margin-left: 3em;
+
+                    img {
+                        width: 330px;
+                    }
+                }
+            }
+        }
+    }
+
+    .fright {
+        width: 100%;
+        float: left;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .slick-next-ds, .nextx {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 99;
+        top: 48px;
+        border: 0;
+        background: url('../img/mslider/arrow_wright.svg') no-repeat center;
+        left: 500px;
+    }
+
+    .slick-prev-ds, .prevx {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 99;
+        top: 48px;
+        border: 0;
+        background: url('../img/mslider/arrow_wleft.svg') no-repeat center;
+        left: -356px;
+    }
+
+    .datewrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        background-color: $lightblack;
+        margin-left: -10px;
+        margin-top: 10px;
+
+        h2.desktop {
+            grid-column: span 3;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: $white;
+            width: 214px !important;
+            text-align: left;
+            margin: 1.4em 0 0 50px;
+            font-weight: 500;
+        }
+
+        .dateSlider {
+            grid-column: span 8;
+            margin-top: 20px;
+            color: $timelinebrown;
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
+            max-width: 850px;
+
+            .slick-prev, .slick-next {
+                display: none !important;
+            }
+
+            .slick-slide {
+                .item {
+                    width: 3em !important;
+                    text-align: center;
+                    font-size: 14px;
+                    cursor: hand;
+                }
+
+                &::before {
+                    display: inline-block;
+                    content: '';
+                    -webkit-border-radius: .375rem;
+                    border-radius: .375rem;
+                    height: .75rem;
+                    width: .75rem;
+                    margin-left: 1rem;
+                    background-color: $timelinebrown;
+                }
+
+                &.slideActive {
+                    color: $white;
+
+                    &::before {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .navSlider {
+        height: 40px;
+
+        .slick-list {
+            display: none;
+        }
+
+        .slick-prev, .slick-next {
+            z-index: 1599;
+            top: 97px;
+        }
+
+        .slick-prev {
+            left: 66px;
+        }
+
+        .slick-next {
+            right: -76px;
+        }
+
+        .slick-dots {
+            color: $white;
+            margin: auto;
+            bottom: -59px;
+            left: 62px;
+
+            li {
+                width: 34px;
+
+                button {
+                    font-size: 1.2em;
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+
+    li button::before {
+        display: inline-block;
+        content: '';
+        -webkit-border-radius: .375rem;
+        border-radius: .375rem;
+        height: .75rem;
+        width: .75rem;
+        margin-left: 1rem;
+        background-color: $timelinebrown;
+        opacity: 1;
+    }
+
+    li.slick-active button:before {
+        opacity: 1;
+        background: #fff !important;
+    }
+
+    .datewrapper2 {
+        display: grid;
+        width: 101%;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        background-color: $lightblack;
+        margin-left: -10px;
+        margin-top: 10px;
+
+        h2.desktop {
+            grid-column: span 2;
+            text-transform: uppercase;
+            font-size: 1em;
+            color: $white;
+            text-align: left;
+            margin: 1.4em 0 0 1em;
+            font-weight: 500;
+        }
+
+        .dateSlider2 {
+            grid-column: span 10;
+            height: 40px;
+            margin: 50px 0 0 20px;
+
+            div {
+                display: inline-block;
+                width: 2.82em;
+                font-size: .9em;
+                color: $timelinebrown;
+            }
+        }
+    }
+
+    .slider-numbers {
+        grid-column: span 12;
+        position: relative;
+        height: 10px;
+
+        .nextx {
+            position: absolute;
+            left: 1114px;
+            top: -72px;
+        }
+
+        .prevx {
+            position: absolute;
+            left: 241px;
+            top: -72px;
+        }
+    }
+
+    hr {
+        position: absolute;
+        z-index: 0;
+        left: 14.8em;
+        width: 880px;
+        margin-top: 2.5em;
+        color: $timelinebrown;
+        height: 1px;
+        border: 1px solid $timelinebrown;
+    }
+
+    .accordion_wrapper {
+        details{
+            summary {
+                height: 100px;
+            }
+
+            summary::-webkit-details-marker {
+                display: none
+            }
+
+            summary:after {
+                content: '+';
+                color: #adca48;
+                float: left;
+                font-size: 1.5em;
+                font-weight: bold;
+                margin: -5px 5px 0 0;
+                padding: 0;
+                text-align: center;
+                width: 20px;
+            }
+
+            div {
+                margin-top: -12px;
+                opacity: 1;
+            }
+        }
+
+        details[open] summary:after {
+            content: '-';
+        }
+    }
+
+    .accordion {
+        section {
+            border-bottom: 2px solid $white;
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .6);
+            background: no-repeat rgba(0, 0, 0, .7) top left;
+            background-size: cover;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            padding: 0 1em 1em 1em;
+            font-weight: 300;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .accordion > * {
+        overflow: hidden;
+        color: $white;
+
+        div.img {
+            text-align: center;
+            margin-bottom: 1.8em;
+        }
+    }
+
+    .accordion > *:not(.expanded) > :not(h3) {
+        max-height: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .accordion > .expanded > :not(h3) {
+        max-height: 26em;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .accordion > * > h3 {
+        cursor: pointer;
+        visibility: visible;
+        min-height: 100px;
+        text-align: center;
+        font-size: 36px;
+        background-size: cover;
+        font-weight: 500;
+        padding-top: .2em;
+        margin-bottom: 0;
+        color: $white;
+    }
+
+    .accordion > * > :not(h3) {
+        transition: max-height 1s,
+        visibility 1s,
+        margin 1s,
+        opacity 1s;
+    }
+}

@@ -1,0 +1,50 @@
+.bullets-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  &.double-line {
+    .bullet {
+      display: inline-block;
+      min-width: 120px;
+      margin: 9px;
+      height: 72px;
+      border: 1px solid $white;
+      line-height: 50px;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+
+        a {
+          border: none !important;
+        }
+      }
+    }
+  }
+
+  .bullet {
+    min-width: 120px;
+    margin: 9px;
+
+    @media #{$max-sm} {
+      min-width: auto;
+      width: 134px;
+    }
+
+    a {
+      &:link, &:visited {
+        color: $white;
+        border: 1px solid $white;
+      }
+
+      &:hover, &:active {
+        color: $black;
+        border: 1px solid $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.title-header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media #{$max-sm} {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  h2, h3 {
+    color: $brown;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0 0 16px 0;
+    margin: 0;
+
+    @media #{$max-sm} {
+      padding: 0 1em 10px 1em;
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+
+    @media #{$max-sm} {
+      font-size: 26px;
+    }
+  }
+
+  div {
+    color: $lightbrown;
+    text-align: center;
+
+    @media #{$max-sm} {
+      padding: 0 0 10px 0;
+      font-size: 25px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 1em 0px 1em;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.3em;
+
+      @media #{$max-sm} {
+        font-size: 22px;
+      }
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+
+  hr {
+    @include hrentreprises;
+  }
+}

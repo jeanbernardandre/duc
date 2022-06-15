@@ -1,0 +1,147 @@
+.rh {
+
+  .header {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    height: 760px;
+    position: relative;
+    margin-bottom: 140px;
+
+    @media #{$max-md} {
+      height: 500px;
+    }
+
+    .wrapper {
+      border-left: 1px solid lighten($grey, 30%);
+      height: 760px;
+    }
+
+    article {
+      display: inline-block;
+      width: 570px;
+      max-width: 570px;
+      color: $white;
+      margin-top: 280px;
+
+      div {
+        line-height: 1.56em;
+      }
+
+      @media #{$max-md} {
+        width: auto;
+        margin-top: 120px;
+      }
+
+      p.category {
+        font-size: 26px;
+      }
+
+      h1 {
+        color: $white;
+        font-weight: 36px;
+        margin: 0;
+      }
+    }
+
+    .menu-aside {
+      position: absolute;
+
+      h5 {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+        color: $white;
+        margin-left: 0.6em;
+      }
+
+      ul.menu {
+        text-align: left;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 13px;
+
+        li {
+          &::before {
+            content: "\2022";
+            color: lighten($grey, 30%);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+
+          a:link, a:visited {
+            color: lighten($grey, 30%);
+            transition: color 0.5s;
+          }
+
+          a:hover, a:active {
+            color: $white;
+
+            &::before {
+              content: "\2022";
+              color: $white;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em;
+            }
+          }
+        }
+      }
+    }
+
+    .round {
+      position: absolute;
+      width: 242px;
+      height: 242px;
+      margin-left: -121px;
+      bottom: -121px;
+      border-radius: 121px;
+      border: 3px solid $white;
+      left: 50%;
+      z-index: 9;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+
+      @media #{$max-md} {
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        bottom: -100px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .rhwrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    
+    @media #{$max-md} {
+      display: block;
+      padding: 1em;
+    }
+
+    .blocrh {
+      grid-column-start: 4;
+      grid-column-end: 8;
+
+      @media #{$max-md} {
+        grid-column-start: 0;
+        grid-column-end: 10;
+      }
+
+      hr {
+        margin-top: 2em;
+        max-width: 500px;
+        border: 1px solid lighten($brown, 40%);
+        text-align: center;
+      }
+    }
+  }
+}

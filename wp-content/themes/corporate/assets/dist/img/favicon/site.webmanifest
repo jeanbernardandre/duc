@@ -1,0 +1,22 @@
+{
+    "short_name": "Huttopia Corporate",
+    "name": "Huttopia recrutement et corporate",
+    "description": "L'histoire et le projet de la marque Huttopia",
+    "icons": [
+        {
+            "src": "./icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "../../../../../../../",
+    "background_color": "#404341",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#404341"
+}

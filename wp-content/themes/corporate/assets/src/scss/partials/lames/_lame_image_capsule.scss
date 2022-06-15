@@ -1,0 +1,36 @@
+.bullets-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+
+  .bullet {
+    grid-column: span 2;
+    display: block;
+    padding: 8px 2px;
+    width: 188px;
+    height: 40px;
+    text-align: center;
+
+    @media #{$max-sm} {
+      grid-column: span 3;
+      width: 140px;
+    }
+
+    a {
+      display: block;
+      padding: 8px 2px;
+
+      &:link, &:visited {
+        color: $brown;
+        border: 1px solid $brown;
+      }
+
+      &:hover, &:active {
+        color: $black;
+        background-color: $white;
+        border: 1px solid $black;
+        background: url('../img/fl_entreprise.svg') $white no-repeat right 164px 15px;
+      }
+    }
+  }
+}

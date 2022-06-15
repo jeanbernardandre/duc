@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffd6fe7f-57cb-4643-aa2e-6a4c4fa38e5b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>accordion</find>
+      <find>item</find>
+      <find>font-size: 3.8em</find>
+      <find>slick-next</find>
+      <find>datewrapper</find>
+      <find>fright</find>
+      <find>lamehome</find>
+      <find>desktop</find>
+      <find>arrow_wright</find>
+      <find>188</find>
+      <find>hr</find>
+      <find>numberimages</find>
+      <find>tablePerso</find>
+      <find>lameimagetextsimple</find>
+      <find>citation</find>
+      <find>img_text_cta</find>
+      <find>videocontainer</find>
+      <find>lameimagetextsimple-repeat</find>
+      <find>mobile-img</find>
+      <find>header-img-cta</find>
+      <find>numbertexts</find>
+      <find>.cita</find>
+      <find>.numberimages</find>
+      <find>list-lang</find>
+      <find>bulletcontainer</find>
+      <find>main-nav</find>
+      <find>.bullets-container</find>
+      <find>top-wrapper</find>
+      <find>cite</find>
+      <find>&lt;h2&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Huttopia Corporate</replace>
+      <replace>huttopiac</replace>
+      <replace>huttopia</replace>
+      <replace>$brown</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/assets/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1awepLz5xkFizijSp227f4sYlPB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ly_11_icl_translations(1).sql" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/ly_11_icl_translations(1).sql" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/assets/src/scss/partials/lames" />
+      <recent name="$PROJECT_DIR$/inc" />
+      <recent name="$PROJECT_DIR$/assets/src/scss/partials/components" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffd6fe7f-57cb-4643-aa2e-6a4c4fa38e5b" name="Default Changelist" comment="" />
+      <created>1561641603735</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561641603735</updated>
+      <workItem from="1561641604987" duration="5702000" />
+      <workItem from="1561978738053" duration="13974000" />
+      <workItem from="1562050997375" duration="28982000" />
+      <workItem from="1562158002050" duration="45280000" />
+      <workItem from="1562566844478" duration="40359000" />
+      <workItem from="1563171365021" duration="45073000" />
+      <workItem from="1563525324097" duration="598000" />
+      <workItem from="1563777557349" duration="37096000" />
+      <workItem from="1563956741978" duration="7147000" />
+      <workItem from="1563980239128" duration="986000" />
+      <workItem from="1564061784866" duration="6197000" />
+      <workItem from="1564143618558" duration="5647000" />
+      <workItem from="1566198095071" duration="8980000" />
+      <workItem from="1566228269197" duration="3668000" />
+      <workItem from="1566288940483" duration="33667000" />
+      <workItem from="1566389778650" duration="36667000" />
+      <workItem from="1566552169400" duration="13600000" />
+      <workItem from="1566800310240" duration="16049000" />
+      <workItem from="1566823757838" duration="12401000" />
+      <workItem from="1566898182113" duration="1316000" />
+      <workItem from="1587651266389" duration="1940000" />
+      <workItem from="1587710975300" duration="609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+</project>

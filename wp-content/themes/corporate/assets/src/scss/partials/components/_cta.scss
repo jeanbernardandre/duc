@@ -1,0 +1,61 @@
+.cta {
+  min-width: 198px;
+  height: 50px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 11px 23px;
+  margin-top: 20px;
+  position: relative;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  &:hover {
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+
+  @keyframes bounce {
+    0% { @include transform(scale(1)); }
+    50% { @include transform(scale(0.9)); }
+    100% { @include transform(scale(1)); }
+  }
+
+  &.darkbrown {
+    background: $brown;
+    border:1px solid $brown;
+    color: $white;
+
+    &:hover {
+      background-color: $lightbrown;
+      color: $white;
+    }
+  }
+
+  &.lightbrown {
+    background: $lightbrown;
+    border:1px solid $lightbrown;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $brown;
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border:1px solid $lightbrown;
+    color: $brown;
+
+    &:hover {
+      background-color: $lightbrown;
+      color: $brown;
+    }
+  }
+}

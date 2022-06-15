@@ -1,0 +1,168 @@
+h1, h2, h3 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px 1em;
+  color: $brown;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+
+  @media #{$max-md} {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  color: $black;
+  margin: 1em 0 0.4em 0;
+}
+
+h3 {
+  color: $black;
+  text-align: left;
+  margin: 1em 0 0.4em 0;
+}
+
+h4, h5 {
+  font-weight: 500;
+  color: $black;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 26px;
+  margin: 0.8em 0;
+}
+
+h6 {
+  font-weight: 500;
+  color: $black;
+  text-align: left;
+  font-size: 20px;
+  margin: 0.6em 0;
+}
+
+h5 {
+  text-transform: none;
+  margin: 0.6em 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0.2em 0;
+}
+
+
+.pagesinglearchive {
+
+  h2 {
+    text-align: left;
+    padding: 0 0 0 60px;
+
+    a {
+
+      &:link, &:visited {
+        color: $brown;
+        transition: color 0.5s;
+      }
+
+      &:hover, &:active {
+        color: $black !important;
+      }
+    }
+  }
+}
+
+.pagesingle {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  @media #{$max-md} {
+    display: block;
+    padding: 0.8em;
+  }
+
+  h1, h2, h3, h4, h5, h6, iframe, p, div, article, section {
+    grid-column-start: 3;
+    grid-column-end: 12;
+
+    @media #{$max-md} {
+      margin-left: 0px;
+      grid-column-start: 0;
+      grid-column-end: 12;
+    }
+  }
+
+  &.formc {
+
+    .spacer {
+
+      @media #{$md} {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  .pagecontact {
+    grid-column: span 9;
+    padding: 2em;
+    margin-left: 100px;
+    line-height: 1.5em;
+
+    @media #{$max-md} {
+      margin-left: 0px;
+      grid-column: span 12;
+    }
+
+    label {
+      font-size: 0.89em;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      border: 1px solid lighten($brown, 20%);
+      border-radius: 0px;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    input[type=submit] {
+      text-align: center;
+      background-color: $brown;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    a.actulink {
+
+      &:hover {
+        border-bottom: 0px;
+        color: darken($brown, 25%);
+      }
+    }
+  }
+
+  .archive, .pageinside {
+
+    article {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+
+      div.picto {
+        grid-column: span 1;
+
+        img {
+          width: 3em;
+          margin-top: 1em;
+        }
+      }
+
+      div.txt {
+        grid-column: span 11;
+      }
+    }
+  }
+}

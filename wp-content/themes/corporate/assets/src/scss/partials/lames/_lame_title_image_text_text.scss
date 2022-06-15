@@ -1,0 +1,45 @@
+.title_image_text_text {
+  padding-bottom: 2em;
+
+  h2 {
+    padding-top: 68px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4em;
+
+    @media #{$max-sm} {
+      padding-bottom: 26px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0.4em;
+    }
+  }
+
+  article {
+    line-height: 1.6em;
+    font-size: 18px;
+    padding: 0px 20px;
+    position: relative;
+
+    @media #{$max-sm} {
+      margin: 0;
+
+      p {
+        padding: 0;
+      }
+    }
+
+    &:nth-of-type(2) {
+      @media #{$max-sm} {
+        padding: 0 20px;
+      }
+    }
+
+  }
+}

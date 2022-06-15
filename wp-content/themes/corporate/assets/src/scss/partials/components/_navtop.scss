@@ -1,0 +1,148 @@
+.top-nav {
+  @include display-flex();
+  align-items: stretch;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  flex-direction: column;
+
+  &.-mobile {
+    @media #{$md} {
+      display: none;
+    }
+  }
+
+  &.-desktop {
+    background: $brown;
+    justify-content: center;
+    width: 100%;
+    display: none;
+
+    @media #{$md} {
+      display: block;
+    }
+
+    .top-menu {
+      padding: 0 15px;
+    }
+  }
+
+  .top-menu {
+    @include display-flex();
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    max-width: $max-width;
+    padding: 0;
+    width: 100%;
+
+    @media #{$sm} {
+      justify-content: center;
+    }
+
+    @media #{$md} {
+      justify-content: flex-end;
+      margin: 8px auto 6px;
+    }
+
+    a {
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      @include display-flex();
+
+      &:link, &:visited {
+        color: $black;
+      }
+
+      &:hover {
+        color: darken($white, 10%);
+      }
+    }
+
+    li:hover, li:focus {
+
+      ul {
+        visibility: visible;
+      }
+    }
+
+    > li {
+      position: relative;
+
+      @media #{$sm} {
+        margin-left: 18px;
+        margin-right: 18px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &.-select-lang {
+        display: none;
+
+        @media #{$sm} {
+          display: block;
+        }
+      }
+
+      ul {
+        background: $brown;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        visibility: hidden;
+        width: 100%;
+        z-index: 75;
+
+        a {
+          color: inherit;
+          display: block;
+          padding: 4px 6px;
+
+          &:hover {
+            background: darken($brown, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .link-picto {
+    color: $black;
+
+    @media #{$md} {
+      color: $white;
+    }
+
+    span {
+      display: none;
+
+      @media #{$xs} {
+        display: block;
+      }
+    }
+
+    svg {
+      max-height: 27px;
+      width: 27px;
+
+      @media #{$xs} {
+        margin-right: 5px;
+      }
+
+      @media #{$md} {
+        display: none;
+        margin-right: 0;
+      }
+    }
+  }
+}

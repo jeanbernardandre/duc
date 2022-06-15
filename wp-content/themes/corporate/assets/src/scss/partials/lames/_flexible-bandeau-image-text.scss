@@ -1,0 +1,119 @@
+.flexible-bandeau-image-text {
+    flex-direction: column;
+    display: flex;
+
+    @media #{$md} {
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .wrapper-illustration {
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 180px;
+        position: relative;
+        text-align: right;
+
+        @media #{$md} {
+            width: 50%;
+        }
+    }
+
+    .wrapper-illustration-content {
+        display: inline-block;
+        height: 100%;
+        text-align: left;
+        max-width: #{$max-width / 2};
+        width: 100%;
+    }
+
+    .wrapper-text {
+        color: #fff;
+        text-align: center;
+
+        @media #{$md} {
+            text-align: left;
+            width: 50%;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 2em;
+            color: $white;
+        }
+
+        &.bg-brown {
+            background-color: $brown;
+
+            .title {
+                color: $brown;
+            }
+        }
+
+        &.bg-black {
+            background-color: $black;
+
+            .title {
+                color: $black;
+            }
+        }
+
+        .wrapper-content-text {
+            display: inline-block;
+            height: 100%;
+            max-width: #{$max-width / 2};
+            width: 100%;
+            padding: 15px;
+
+            @media #{$md} {
+                &.block {
+                    &-small {
+                        padding: 30px;
+                        height: 230px;
+                    }
+
+                    &-big {
+                        padding: 75px;
+                        height: 375px;
+                    }
+                }
+            }
+        }
+    }
+
+    .title {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media #{$md} {
+            text-align: left;
+        }
+    }
+
+    .wrapper-buttons {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+
+        @media #{$md} {
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    .button-type {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        @media #{$md} {
+            margin-right: 15px;
+        }
+    }
+}

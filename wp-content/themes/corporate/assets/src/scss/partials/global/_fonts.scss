@@ -1,0 +1,26 @@
+$path: '../fonts/';
+
+@font-face {
+  font-family: 'lato';
+  src: url($path + 'Lato-Bold.ttf') format('ttf'),
+  url($path + 'Lato-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url($path + 'Lato-Regular.ttf') format('ttf'),
+  url($path + 'Lato-Regular.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url($path + 'Lato-Italic.ttf') format('ttf'),
+  url($path + 'Lato-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+

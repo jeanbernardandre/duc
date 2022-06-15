@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="15px" viewBox="0 0 8 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ico/white/arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="HC_01_HP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_HP_S_CPT_menu_step2" transform="translate(-15.000000, -70.000000)" fill="#A07F52" fill-rule="nonzero">
+            <g id="menu" transform="translate(-1.000000, 48.000000)">
+                <g id="links" transform="translate(16.000000, 0.000000)">
+                    <g id="ico/white/arrow" transform="translate(4.500000, 29.500000) scale(1, -1) rotate(90.000000) translate(-4.500000, -29.500000) translate(-3.000000, 25.000000)">
+                        <g id="fleche" transform="translate(0.375000, 0.750000)">
+                            <path d="M0.484834957,1.01516504 L6.85983496,7.39016504 C7.00628157,7.53661165 7.24371843,7.53661165 7.39016504,7.39016504 C7.53661165,7.24371843 7.53661165,7.00628157 7.39016504,6.85983496 L1.01516504,0.484834957 C0.868718434,0.338388348 0.631281566,0.338388348 0.484834957,0.484834957 C0.338388348,0.631281566 0.338388348,0.868718434 0.484834957,1.01516504 Z" id="Stroke-1"></path>
+                            <path d="M7.39016504,7.39016504 L13.765165,1.01516504 C13.9116117,0.868718434 13.9116117,0.631281566 13.765165,0.484834957 C13.6187184,0.338388348 13.3812816,0.338388348 13.234835,0.484834957 L6.85983496,6.85983496 C6.71338835,7.00628157 6.71338835,7.24371843 6.85983496,7.39016504 C7.00628157,7.53661165 7.24371843,7.53661165 7.39016504,7.39016504 Z" id="Stroke-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+.lame-spacer {
+  display: block;
+
+  @media #{$max-sm} {
+    &.b-sm {
+      &-15 {
+        height: 15px;
+      }
+      &-30 {
+        height: 30px;
+      }
+      &-45 {
+        height: 45px;
+      }
+      &-60 {
+        height: 60px;
+      }
+      &-75 {
+        height: 75px;
+      }
+      &-90 {
+        height: 90px;
+      }
+      &-105 {
+        height: 105px;
+      }
+    }
+  }
+
+  @media #{$sm} {
+    &.b-md {
+      &-15 {
+        height: 15px;
+      }
+      &-30 {
+        height: 30px;
+      }
+      &-45 {
+        height: 45px;
+      }
+      &-60 {
+        height: 60px;
+      }
+      &-75 {
+        height: 75px;
+      }
+      &-90 {
+        height: 90px;
+      }
+      &-105 {
+        height: 105px;
+      }
+    }
+  }
+}

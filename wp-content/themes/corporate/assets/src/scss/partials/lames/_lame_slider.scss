@@ -1,0 +1,126 @@
+.carrouselTop {
+  padding: 30px 10px 40px 10px;
+  min-height: 700px;
+  background-color: 2px solid $brown;
+  text-align: center;
+  position: relative;
+
+  @media #{$max-sm} {
+    padding: 0;
+    min-height: auto;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+
+    @media #{$max-sm} {
+      font-size: 30px;
+    }
+  }
+
+  .slider-for {
+    width: 744px;
+    max-height: 500px;
+    margin: 30px auto 1px;
+    overflow: hidden;
+
+    @media #{$max-sm} {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-nav {
+    width: 740px;
+    height: 85px;
+    margin: auto;
+    padding-left: 2px;
+
+    @media #{$max-sm} {
+      display: none;
+    }
+  }
+
+  .slider-nav .slick-track {
+    height: 85px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5000;
+    margin-top: -12px;
+  }
+
+  .container-arrows {
+    position: absolute;
+    width: 100%;
+    background-color: $brown;
+
+    .prev2, .next2 {
+      height: 40px;
+      width: 40px;
+      top: -200px;
+      border: none;
+      background: url('../img/mslider/arrow_wleft.svg') no-repeat center;
+
+      @media #{$max-sm} {
+        top: -240px;
+        background: $white url('../img/mslider/arrow_gleft.svg') no-repeat center;
+        padding: 10px;
+        height: 60px;
+      }
+
+      &:hover {
+        background: url('../img/mslider/arrow_gleft.svg') no-repeat center;
+
+        @media #{$max-sm} {
+          background: $brown url('../img/mslider/arrow_gleft.svg') no-repeat center;
+        }
+      }
+    }
+
+    .prev2 {
+      left: 130px;
+
+      @media #{$max-sm} {
+        left: 14px;
+      }
+    }
+
+    .next2 {
+      right: 164px;
+      background: url('../img/mslider/arrow_wright.svg') no-repeat center;
+
+      @media #{$max-sm} {
+        right: 14px;
+        background: $white url('../img/mslider/arrow_gright.svg') no-repeat center;
+      }
+
+      svg {
+        @include transform(rotate(-90deg));
+        margin-right: 15px;
+      }
+
+      &:hover {
+        background: url('../img/mslider/arrow_gright.svg') no-repeat center;
+
+        @media #{$max-sm} {
+          background: $brown url('../img/mslider/arrow_gright.svg') no-repeat center;
+        }
+      }
+    }
+  }
+
+  .mobile-image {
+    padding: 1em;
+  }
+}

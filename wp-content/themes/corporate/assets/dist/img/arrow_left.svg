@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="44px" viewBox="0 0 23 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ico/arrow_grey</title>
+    <desc>Created with Sketch.</desc>
+    <g id="HC_03_Entreprise" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="HC_03_Entreprise_V3" transform="translate(-164.000000, -4487.000000)" stroke="#9B9B9B">
+            <g id="Group-2-Copy" transform="translate(-159.000000, 4137.000000)">
+                <g id="ico/light_grey/arrow" transform="translate(334.000000, 372.000000) scale(-1, 1) rotate(90.000000) translate(-334.000000, -372.000000) translate(309.000000, 347.000000)">
+                    <g id="fleche" transform="translate(3.750000, 15.000000)">
+                        <path d="M0,0 L21.25,21.25" id="Stroke-1"></path>
+                        <path d="M21.25,21.25 L42.5,0" id="Stroke-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

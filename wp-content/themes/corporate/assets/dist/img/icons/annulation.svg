@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="gabarit/D/rassuranceV2" transform="translate(-548.000000, -32.000000)" fill-rule="nonzero" stroke="#01513B" stroke-width="2">
+            <g id="rassurance">
+                <g id="rassurance-1-copy" transform="translate(446.000000, 31.000000)">
+                    <g id="Group-2" transform="translate(103.000000, 2.000000)">
+                        <polyline id="Path-2" points="27 19 18 28.52 27 37"></polyline>
+                        <path d="M18,28.52 L40.5,29.2789512 L40.5,57 C14.1666667,60.3333333 0.666666667,50.3836667 5.08038056e-12,27.151 C1,-5 52,-10 59,21.15" id="Path-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

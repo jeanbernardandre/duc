@@ -1,0 +1,40 @@
+.actuaccroche {
+
+  article.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    div {
+
+      &.pictol {
+        grid-column: span 2;
+        text-align: right;
+        font-size: 3em;
+        align-self: center;
+
+        img {
+          width: 4em;
+        }
+      }
+
+      &.accroche {
+        grid-column: span 8;
+
+        @media #{$max-sm} {
+          grid-column: span 12;
+        }
+      }
+
+      &.pictor {
+        grid-column: span 2;
+        text-align: left;
+        font-size: 3em;
+        align-self: center;
+
+        img {
+          width: 4em;
+        }
+      }
+    }
+  }
+}

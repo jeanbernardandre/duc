@@ -1,0 +1,130 @@
+.wrapper-center-select-lang {
+  text-align: center;
+  border-left: 1px solid $secondarybrown;
+  border-right: 1px solid $secondarybrown;
+
+  @media #{$max-sm} {
+    border-left: none;
+  }
+}
+
+@media #{$max-sm} {
+  #main-menu {
+    ul div {
+      display: none;
+    }
+  }
+}
+
+.wrapper-select-lang {
+  position: relative;
+
+  &.-mobile {
+    border: 1px solid rgba(#fff, 0.25);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+
+    .selected-lang {
+      display: inline-flex;
+      padding: 13px 15px 14px;
+      border-bottom: 2px solid $white;
+
+      @media #{$max-sm} {
+        span {
+          font-size: 0.8em;
+          padding: 0;
+        }
+      }
+    }
+
+    .list-lang {
+      background: lighten($brown, 2%);
+      top: initial;
+      @include box-shadow(0 0 15px rgba(#000, 0.25));
+
+      @media #{$max-sm} {
+        margin: 0;
+      }
+
+      @media #{$ipadpro} {
+        margin: 0;
+      }
+    }
+
+    .link-lang {
+      display: block;
+
+      a {
+        color: inherit;
+        padding: 4px 6px;
+
+        &:hover, &:focus {
+          background: darken($brown, 1%);
+        }
+      }
+    }
+  }
+
+  .selected-lang {
+    align-items: center;
+    flex-direction: row;
+    padding: 4px 6px;
+    @include display-flex();
+
+    &.mobile {
+      display: block;
+    }
+
+    @media #{$max-sm} {
+      display: none;
+    }
+
+    &:hover, &:focus {
+      & + .list-lang {
+        visibility: visible;
+        border-bottom: none;
+      }
+    }
+
+    svg {
+      height: 10px;
+      margin-left: 8px;
+      width: 10px;
+    }
+  }
+
+  .list-lang {
+    background: $secondarybrown;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    width: 100%;
+    z-index: 75;
+
+    &:hover, &:focus {
+      visibility: visible;
+    }
+  }
+
+  .link-lang {
+    a {
+      color: inherit;
+      display: block;
+      padding: 4px 6px;
+      border-bottom: none !important;
+
+      &:hover {
+        background: darken($secondarybrown, 5%);
+      }
+    }
+  }
+}
+
+.wrapper-select-lang.-mobile .list-lang {
+  display: none;
+  visibility: visible !important;
+}

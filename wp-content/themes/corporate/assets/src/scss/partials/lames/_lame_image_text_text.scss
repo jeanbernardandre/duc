@@ -1,0 +1,26 @@
+.itt-articles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 18px;
+
+  article {
+    grid-column: span 1;
+
+    &:first-of-type {
+      padding-right: 20px;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 20px;
+
+      @media #{$max-sm} {
+        padding: 0px;
+      }
+    }
+
+    @media #{$max-sm} {
+      grid-column: span 2;
+      padding: 0px;
+    }
+  }
+}

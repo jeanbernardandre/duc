@@ -1,0 +1,49 @@
+.nav-breadcrumb {
+  padding: 0;
+
+  .ul-breadcrumb {
+    align-items: center;
+    @include display-flex();
+    flex-direction: row;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    list-style: none;
+    margin: auto;
+    max-width: $max-width;
+    padding: 0 15px;
+  }
+
+  .entry {
+    margin-right: 12px;
+    padding-right: 12px;
+    position: relative;
+
+    &:after {
+      background: $brown;
+      content: '';
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top: 7px;
+      width: 1px;
+    }
+
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:link, &:visited {
+        color: black;
+      }
+
+      &:hover, &:active {
+        color: $secondarybrown;
+      }
+    }
+  }
+}

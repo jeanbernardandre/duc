@@ -1,0 +1,20 @@
+.imgfw {
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    line-height: 0;
+
+    @media #{$max-md} {
+        max-height: 368px;
+    }
+
+    img {
+        min-width: 100%;
+
+        @media #{$max-md} {
+            width: 100%;
+            max-height: 368px;
+        }
+    }
+}

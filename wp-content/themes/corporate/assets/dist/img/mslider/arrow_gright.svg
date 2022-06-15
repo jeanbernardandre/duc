@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="46px" viewBox="0 0 25 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ico/arrow_grey copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="HC_02_Edito" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HC_01_Edito" transform="translate(-1319.000000, -14142.000000)" fill="#4A4A4A">
+            <g id="10-visuels_V1" transform="translate(0.000000, 13857.000000)">
+                <g id="ico/grey/arrow" transform="translate(1331.000000, 308.000000) scale(-1, 1) rotate(90.000000) translate(-1331.000000, -308.000000) translate(1306.000000, 283.000000)">
+                    <g id="fleche" transform="translate(1.250000, 12.500000)">
+                        <path d="M1.61611652,3.38388348 L22.8661165,24.6338835 C23.3542719,25.1220388 24.1457281,25.1220388 24.6338835,24.6338835 C25.1220388,24.1457281 25.1220388,23.3542719 24.6338835,22.8661165 L3.38388348,1.61611652 C2.89572811,1.12796116 2.10427189,1.12796116 1.61611652,1.61611652 C1.12796116,2.10427189 1.12796116,2.89572811 1.61611652,3.38388348 Z" id="Stroke-1" fill-rule="nonzero"></path>
+                        <path d="M24.6338835,24.6338835 L45.8838835,3.38388348 C46.3720388,2.89572811 46.3720388,2.10427189 45.8838835,1.61611652 C45.3957281,1.12796116 44.6042719,1.12796116 44.1161165,1.61611652 L22.8661165,22.8661165 C22.3779612,23.3542719 22.3779612,24.1457281 22.8661165,24.6338835 C23.3542719,25.1220388 24.1457281,25.1220388 24.6338835,24.6338835 Z" id="Stroke-3" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

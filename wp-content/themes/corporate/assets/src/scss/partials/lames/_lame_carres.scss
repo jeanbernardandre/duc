@@ -1,0 +1,130 @@
+.produits, .preferences {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media #{$max-sm} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .produit, .preference {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background: $white;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid $caramel;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    &:hover {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      animation-name: example;
+      animation-duration: 0.25s;
+      border-left: 8px solid $caramel;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .titre {
+      font-weight: 700;
+      font-size: 1.4em;
+      padding-left: 0;
+      padding-right: 0;
+      height: 4em;
+
+      @media #{$max-sm} {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+
+  a.prod {
+    text-decoration: none;
+    color: $black;
+  }
+
+  .produit {
+
+    .picto {
+      grid-column: span 5;
+      padding: 1em;
+
+      @media #{$max-sm} {
+        grid-column: span 4;
+      }
+
+      @media #{$max-sm} {
+        padding: 1.2em  0.1em;
+      }
+
+      img {
+        width: 8.2em;
+
+        @media #{$max-md} {
+          width: 5.2em;
+        }
+
+        @media #{$max-sm} {
+          width: 3.2em;
+        }
+      }
+    }
+
+    .titre {
+      grid-column: span 7;
+      padding-top: 1.78em;
+      padding-left: 0.8em;
+      font-size: 1.8em;
+      line-height: 1.4em;
+
+      @media #{$max-md} {
+        font-size: 1.4em;
+        padding-left: 0;
+      }
+
+      @media #{$max-sm} {
+        grid-column: span 8;
+        font-size: 1.1em;
+        padding-left: 0;      }
+    }
+
+    h3 {
+      font-size: 4em;
+      grid-column: span 12;
+      margin: 0;
+      padding: 0.5em 0 0.2em 0.3em;
+      font-style: italic;
+
+      @media #{$max-md} {
+        font-size: 2.6em;
+      }
+
+      &.caramel {
+        color: $caramel;
+      }
+
+      &.greengitotel {
+        color: $greengitotel;
+      }
+
+      &.bluegitane {
+        color: $bluegitane;
+      }
+
+      &.orangenegoce {
+        color: $orangenegoce;
+      }
+    }
+  }
+
+  @keyframes example {
+    0%   {border-left: 2px solid #ffffff;}
+    20%  {border-left: 3px solid lighten($caramel, 80%);}
+    40%  {border-left: 3px solid lighten($caramel, 60%);}
+    60%  {border-left: 4px solid lighten($caramel, 40%);}
+    80%  {border-left: 4px solid lighten($caramel, 20%);}
+    100% {border-left: 5px solid $caramel;}
+  }
+}

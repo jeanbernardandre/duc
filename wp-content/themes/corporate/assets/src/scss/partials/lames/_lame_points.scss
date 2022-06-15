@@ -1,0 +1,49 @@
+.points {
+  padding: 1.4em 0;
+  margin-top: 40px;
+  background-color: $caramel;
+  min-height: 200px;
+  text-align: center;
+
+  @media #{$max-sm} {
+    padding: 0.6em;
+  }
+
+  .pointswrapper {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 0.8em;
+
+    article {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+      float: left;
+      margin-left: 1em;
+      max-width: 20em;
+
+      @media #{$max-sm} {
+        padding: 1.4em;
+        width: 100%;
+      }
+
+      i{
+        font-size: 5em;
+        color: $white;
+      }
+
+      p {
+        color: white;
+        font-size: 1.5em;
+
+        @media #{$max-sm} {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+
+  &:after {
+    clear: both;
+  }
+}

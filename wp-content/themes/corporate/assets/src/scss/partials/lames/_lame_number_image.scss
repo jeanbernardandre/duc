@@ -1,0 +1,94 @@
+.numberimages {
+  color: $lightblack;
+  display: block;
+
+  h2{
+    font-weight: 400;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.03em;
+    font-weight: 300;
+
+    .small {
+      font-size: 26px;
+    }
+
+    @media #{$max-sm} {
+      margin-top: 20px;
+    }
+  }
+
+  .wrapperimage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 214px;
+    margin-top: -22px;
+    text-align: right;
+
+    @media #{$max-sm} {
+      margin-top: 20px;
+      height: auto;
+    }
+
+    @media #{$ipadpro} {
+      height: auto;
+    }
+
+    .wrapper {
+      width: 400px;
+      display: inline-block;
+      padding-top: 40px;
+
+      @media #{$max-sm} {
+        margin-top: 0px;
+        width: 360px;
+      }
+
+    }
+
+    .numberimage {
+      grid-column: span 1;
+      align-content: space-between;
+      justify-content: space-around;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media #{$max-sm} {
+        grid-column: span 2;
+        margin-top: 1em;
+      }
+
+      &.right {
+        display: inline-block;
+      }
+
+      &.left {
+        text-align: left;
+      }
+
+      h3 {
+        font-size: 66px;
+        word-spacing: 0.16em;
+        text-align: center;
+        margin: 0;
+        padding: 66px 0 28px 0;
+        font-weight: 500;
+
+        @media #{$max-sm} {
+          font-size: 42px;
+          padding: 20px 0 14px 0;
+        }
+      }
+
+      div {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  hr {
+    @include hrentreprises;
+  }
+}

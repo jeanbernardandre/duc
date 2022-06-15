@@ -1,0 +1,306 @@
+.flexible-interactive-map {
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    height: 500px;
+
+    @media #{$md} {
+        flex-direction: row;
+        height: 600px;
+    }
+
+    @media #{$ipad} {
+        flex-direction: row;
+        height: 642px;
+    }
+
+    &.map11 {
+        @media #{$md} {
+            height: 570px;
+        }
+
+        @media #{$ipad} {
+            flex-direction: row;
+            height: 580px;
+        }
+
+        .kali-map {
+            height: 580px !important;
+        }
+    }
+
+    .wrapper-map,
+    .wrapper-details {
+        width: 100%;
+
+        @media #{$md} {
+            width: 50%;
+        }
+    }
+
+    .wrapper-map {
+        text-align: center;
+
+        .kali-map {
+            width: 100%;
+            height: 100%;
+
+            @media #{$max-sm} {
+                height: 400px;
+            }
+
+            @media #{$ipad} {
+                height: 642px;
+            }
+        }
+    }
+
+    .wrapper-details {
+
+        background: $brown;
+        color: #fff;
+        font-size: 18px;
+        line-height: 26px;
+
+        &.-camping,
+        &.-village {
+            padding: 0;
+
+            .modal-text {
+                padding: 0;
+            }
+
+            .wrapper-content {
+                display: flex;
+            }
+        }
+
+        &.-camping {
+            color: #fff !important;
+
+            .button-type {
+                background: $brown;
+            }
+        }
+
+        &.-village {
+            background: $brown !important;
+            color: #fff !important;
+
+            .button-type {
+                background: $brown;
+            }
+        }
+
+        &.bg-gray {
+            color: #01513B;
+        }
+
+        h2 {
+            text-align: left;
+            color: $white;
+        }
+
+
+        .illustration {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 280px;
+            width: 100%;
+            margin-bottom: 15px;
+
+            .category {
+                position: absolute;
+                top: 15px;
+                background-color: rgba(255, 255, 255, .5);
+                right: 15px;
+                color: #fff;
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding: 6px 8px;
+            }
+        }
+
+        .wrapper-buttons {
+            align-items: flex-start;
+            flex-direction: column;
+            display: flex;
+
+            &.-row {
+                align-items: center;
+                flex-direction: row;
+
+                a {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .content-left,
+        .content-right {
+            width: 100%;
+
+            @media #{$md} {
+                width: 50%;
+            }
+        }
+
+        .content-left {
+            padding: 10px 10px 10px 60px;
+            height: 100%;
+
+            .rate {
+                position: absolute;
+                display: inline-block;
+                height: 35px;
+                margin-right: 10px;
+                width: 31px;
+                top: 50%;
+                right: 100%;
+                transform: translateY(-50%);
+
+                span {
+                    color: #fff;
+                    font-size: 15px;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                svg {
+                    height: 35px;
+                    width: 31px;
+                    color: $brown;
+                }
+            }
+
+            .title-map {
+                margin: 0 0 10px;
+                position: relative;
+            }
+
+            .tags {
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 10px 0 20px;
+                display: flex;
+
+                .tag {
+                    background: greenyellow;
+                    color: $brown;
+                    border-radius: 40px;
+                    font-size: 12px;
+                    line-height: 1;
+                    margin-right: 4px;
+                    padding: 8px 12px;
+                }
+            }
+
+            .region {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+
+        .content-right {
+            padding: 10px;
+        }
+    }
+
+    .map, .modal-text {
+        margin: auto;
+        width: 100%;
+
+        @media #{$md} {
+            max-width: #{$max-width / 2};
+        }
+    }
+
+    .wrapper-map,
+    .wrapper-details {
+        width: 100%;
+
+        @media #{$md} {
+            width: 50%;
+        }
+    }
+
+    .modal-text {
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 40px 15px;
+        display: flex;
+
+        @media #{$md} {
+            align-items: flex-start;
+            padding: 75px 50px;
+        }
+
+        @media #{$lg} {
+            padding: 75px 0 75px 100px;
+        }
+
+        &.full {
+            max-width: none;
+        }
+    }
+
+    .title {
+        font-size: 26px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        padding: 0;
+        text-align: center;
+
+        @media #{$md} {
+            text-align: left;
+        }
+    }
+
+    .description {
+        text-align: center;
+
+        @media #{$md} {
+            text-align: justify;
+        }
+    }
+
+    .kali-map {
+        height: 40vh;
+        width: 50vh;
+
+        @media #{$md} {
+            height: 100%;
+        }
+
+        .cluster-marker {
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+
+            span {
+                position: absolute;
+                top: 5px;
+                line-height: 21px;
+                height: 21px;
+                width: 21px;
+                color: black;
+                font-size: 14px;
+                background-color: #fff;
+                left: 50%;
+                border-radius: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

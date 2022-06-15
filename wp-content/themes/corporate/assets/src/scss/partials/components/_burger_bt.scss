@@ -1,0 +1,55 @@
+.burger-button {
+  appearance: none;
+  border: 0;
+  padding: 15px 15px;
+  position: relative;
+  height: 54px;
+  width: 58px;
+  z-index: 200;
+  background: $white;
+
+  &.-open {
+    background-color: $brown;
+  }
+
+  .close {
+    background: $brown;
+  }
+
+  @media #{$md} {
+    display: none;
+  }
+
+  &:focus {
+    outline-style:none;
+    @include box-shadow(none);
+    border-color:transparent;
+  }
+
+  &.-open {
+    .open {
+      visibility: hidden;
+    }
+
+    .close {
+      visibility: visible;
+    }
+  }
+
+  .open {
+    visibility: visible;
+  }
+
+  .close {
+    visibility: hidden;
+  }
+
+  svg {
+    left: 50%;
+    max-height: 18px;
+    position: absolute;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+    width: 20px;
+  }
+}

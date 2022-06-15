@@ -1,0 +1,242 @@
+body {
+  background-color: $white;
+  font-family: $fontmain;
+  font-size: 1rem;
+  line-height: 1.4em;
+  transition: transform 0.25s ease-in-out;
+  padding-top: 0 !important;
+  overflow-x: hidden;
+
+  @media #{$md} {
+    @include transform(none);
+  }
+
+  @media #{$max-sm} {
+    &.page-template-template-flexible {
+      padding-top: 0 !important;
+      background: #fff;
+    }
+  }
+
+  * {
+    box-sizing: border-box !important;
+  }
+
+  &.page-template-template-flexible,
+  &.single-site {
+
+    .alert {
+      position: relative;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media #{$max-sm} {
+    max-width: 100%;
+  }
+
+  @media #{$max-md} {
+    max-width: $desktop-width;
+  }
+
+  @media #{$lg} {
+    max-width: $large-width;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#main-container {
+  position: relative;
+  @include transform(none);
+  transition: transform 0.25s ease-in-out;
+
+  &.menu-mobile-opened {
+    height: 100vh;
+    overflow: hidden;
+    @include transform(translateX(275px));
+    width: 100%;
+
+    @media #{$md} {
+      @include transform(none);
+    }
+
+    #layer-overflow {
+      background: rgba($black, 0.25);
+      visibility: visible;
+
+      @media #{$md} {
+        visibility: hidden;
+      }
+    }
+
+    .burger-button {
+      .open {
+        visibility: hidden;
+      }
+
+      .close {
+        visibility: visible;
+      }
+    }
+
+    & + #layer-overflow {
+      background: rgba($black, 0.5);
+      visibility: visible;
+
+      @media #{$md} {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+a[role=button] {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  &:link, &:visited {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+  }
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: $brown;
+  }
+}
+
+#layer-overflow {
+  background: rgba($black, 0);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: visibility 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  visibility: hidden;
+  width: 100vw;
+
+  @media #{$md} {
+    visibility: hidden;
+  }
+}
+
+.section-container {
+  margin: auto;
+  max-width: $max-width;
+  padding: 0 15px;
+}
+
+.absolute-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dropdown-backdrop {
+  display: none;
+}
+
+.whitebg {
+  background-color: $white;
+}
+
+.greybg {
+  background-color: $secondarybrown;
+}
+
+.brown {
+  color: $brown !important;
+}
+
+.black {
+  color: $black !important;
+}
+
+.small {
+  font-size: 14px !important;
+}
+
+.xsmall {
+  font-size: 12px !important;
+}
+
+.stitrecentre {
+  >p {
+    text-align: center;
+    color: $lightbrown;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+.img_responsive {
+  width: 100%;
+  height: auto;
+}
+
+.nav-breadcrumb {
+  display: none !important;
+}
+
+#main-container {
+  position: relative;
+  @include transform(none);
+  transition: transform 0.25s ease-in-out;
+
+  &.menu-mobile-opened {
+    height: 100vh;
+    overflow: hidden;
+    @include transform(translateX(275px));
+    width: 100%;
+
+    @media #{$md} {
+      @include transform(none);
+    }
+
+    #layer-overflow {
+      background: rgba(#000, 0.25);
+      visibility: visible;
+
+      @media #{$md} {
+        visibility: hidden;
+      }
+    }
+
+    .burger-button {
+      .open {
+        visibility: hidden;
+      }
+
+      .close {
+        visibility: visible;
+      }
+    }
+
+    & + #layer-overflow {
+      background: rgba(#000, 0.5);
+      visibility: visible;
+
+      @media #{$md} {
+        visibility: hidden;
+      }
+    }
+  }
+}

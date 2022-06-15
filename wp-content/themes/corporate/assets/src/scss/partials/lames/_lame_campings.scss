@@ -1,0 +1,82 @@
+.campings-list-wrapper {
+    background-color: #eee;
+
+    h2 {
+        text-transform: uppercase;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .campings-list {
+        padding: 1em;
+
+        @media #{$max-md} {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .container {
+            padding-top: 1em;
+        }
+
+         h2 {
+             text-transform: uppercase;
+             padding: 0;
+             text-align: left;
+             font-weight: bold;
+        }
+
+        h4 {
+            font-size: 1em;
+            font-style: italic;
+            color: #3d3d3d;
+        }
+
+        .camping {
+            background-color: #fff;
+            box-shadow: 2px 1px 2px rgba(0,0,0,0.2);
+
+            .camping-pic {
+                background-size: cover;
+                height: 200px;
+            }
+
+            .camping-logo {
+
+            }
+
+            .camping-text {
+                padding: 1em;
+
+                h2 {
+                    color: $brown;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                }
+
+                .cta {
+                    background-color: $brown;
+                    color: $white;
+                    text-transform: uppercase;
+                    padding: .7em;
+                    cursor: pointer;
+
+                    &.camping {
+                        min-width: 152px;
+                        height: 42px;
+                    }
+                }
+            }
+
+            .social {
+                display: inline-block;
+                vertical-align: middle;
+                text-align: right;
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

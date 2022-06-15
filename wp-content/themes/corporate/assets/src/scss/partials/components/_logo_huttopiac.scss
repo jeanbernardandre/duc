@@ -1,0 +1,30 @@
+.logo-huttopiac {
+    display: inline-block;
+    overflow: hidden;
+    width: 232px;
+    margin: 5px 0;
+    padding-top: 0px;
+    position: absolute;
+    z-index: 9999;
+    height: 220px;
+
+    @media #{$max-sm} {
+        width: 220px;
+        padding-top: 10px;
+    }
+
+    a {
+        display: inline-block;
+        line-height: 1;
+    }
+
+    img {
+        height: 100%;
+        width: 144px;
+
+        @media #{$max-sm} {
+            width: 100%;
+        }
+    }
+}
+
