@@ -6,22 +6,31 @@ jQuery(function($){
             adaptiveHeight: true,
             autoplay: false,
             autoplaySpeed: 3000,
-            centerMode: false,
+            centerMode: true,
             dots: false,
             infinite: true,
             nextArrow: '.nav-you-are.next',
             prevArrow: '.nav-you-are.prev',
             speed: 500,
             swipeToSlide: true,
-            variableWidth: true,
+/*            variableWidth: true,*/
             slidesToShow: 4,
             slidesToScroll: 4,
+
             responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 1624,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
                         infinite: true
                     }
                 }, {
@@ -36,7 +45,6 @@ jQuery(function($){
             ]
         });
     });
-
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

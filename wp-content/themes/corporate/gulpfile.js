@@ -10,7 +10,7 @@ var jshint = require('gulp-jshint');
 var plumber = require('gulp-plumber');
 var iconfont = require('gulp-iconfont');
 var rev = require('gulp-rev');
-var timestamp = Math.round(Date.now()/1000);
+var timestamp = Math.round(Date.now() / 1000);
 var iconsFontName = 'huttopia-icon';
 var iconsFontMap = [];
 var cleanCSS = require('gulp-clean-css');
@@ -39,13 +39,11 @@ gulp.task('js', function() {
 
 gulp.task('css', function(){
     return gulp.src(pathSrc+'scss/main.scss')
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
         .pipe(cleanCSS())
-        .pipe(gulp.dest(pathDist+'css'))
-        .pipe(rev())
-        .pipe(gulp.dest(pathDist+'css'))
-        .pipe(rev.manifest())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(pathDist+'css'))
         .pipe(plumber.stop())
 });
@@ -107,11 +105,12 @@ gulp.task('iconfont', function(){
 gulp.task('watch', function () {
     gulp.watch([
         pathSrc+'scss/**/*.scss',
+        pathSrc+'scss/**/**/**/*.scss',
         pathSrc+'scss/**/**/*.scss'
-    ], ['css']);
-    gulp.watch(pathSrc+'js/**/*.js', ['js']);
-    gulp.watch(pathSrc+'fonts/**/*.{ttf,woff,woff2,svg,eot}', ['fonts']);
+    ], gulp.series('css'));
+    gulp.watch(pathSrc+'js/**/*.js', gulp.series('js'));
+    gulp.watch(pathSrc+'fonts/**/*.{ttf,woff,woff2,svg,eot}', gulp.series('fonts'));
 });
 
-gulp.task('prod', ['js', 'css', 'fonts', 'iconfont']);
-gulp.task('default', ['watch']);
+gulp.task('prod', gulp.series('js', 'css', 'fonts', 'iconfont'));
+gulp.task('default', gulp.series('watch'));

@@ -1,5 +1,5 @@
 <div class="<?php the_sub_field('fd_bg'); ?> campings-list-wrapper">
-    <section class="container lame_minslider">
+    <section class="lame_minslider">
         <?php echo empty(get_sub_field('mini_title')) === false ? '<h2>' . get_sub_field('mini_title') . '</h2>' : ''; ?>
         <div class="wrapper-slider-category">
             <div class="slider-category campings-list">

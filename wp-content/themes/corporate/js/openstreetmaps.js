@@ -1,11 +1,7 @@
-
-const longCanada = 44.292538;
-const latCanada = -71.235352;
 const longEurope = 46.00284325773779;
 const latEurope = 4.695495688554427;
 const zoomEurope = typeDevice === 'mobile' ? 7 : 8.4;
-const zoomCanada = typeDevice === 'mobile' ? 7 : 7;
-console.log(baseDirectory + '/assets/dist/img/map-marker-2.png');
+
 function iconType(type) {
     let iconType = '';
     if (type === 'Camping') {
@@ -26,7 +22,6 @@ function iconType(type) {
 
     return iconType;
 }
-
 
 //////OK
 
@@ -121,15 +116,6 @@ if (
         mapDiv = 'map_dest';
         zoom = zoomEurope;
         mapCenter = L.latLng(longEurope, latEurope);
-    } else if (document.getElementById(mapId)) {
-        mapDiv = mapId;
-        mapCenter = blogId === 1 ? L.latLng(longEurope, latEurope) : L.latLng(longCanada, latCanada);
-        zoom = blogId === 1 ? zoomEurope : zoomCanada;
-    } else {
-        mapDiv = 'map_dest_ca';
-        zoom = zoomCanada;
-        mapCenter = L.latLng(longCanada, latCanada);
-        campingOn = false;
     }
     let map = L.map(mapDiv, {
         center: mapCenter,

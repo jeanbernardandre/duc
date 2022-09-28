@@ -1,0 +1,10 @@
+.idea/
+.htaccess
+wp-content/uploads/*
+node_modules/
+wp-content/themes/corporate/assets/dist/js/*
+wp-content/themes/corporate/assets/dist/css/*
+config.php
+.DS_Store
+._.DS_Store
+video/*

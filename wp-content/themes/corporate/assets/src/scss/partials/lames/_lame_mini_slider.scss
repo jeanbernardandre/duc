@@ -45,7 +45,7 @@
         }
 
         .prev {
-            left: -118px;
+            left: -20px;
             background: url('../img/mslider/arrow_gleft.svg') no-repeat center;
 
             @media #{$max-sm} {
@@ -70,7 +70,7 @@
         }
 
         .next {
-            right: -118px;
+            right: -20px;
             background: url('../img/mslider/arrow_gright.svg') no-repeat center;
 
             @media #{$max-sm} {
@@ -101,10 +101,16 @@
     }
 
     .slick-slide {
-        width: 265px !important;
+        //width: 25% !important;
         padding: 20px 0;
         margin-left: 10px;
         margin-right: 10px;
+
+        &.slick-active {
+/*            @media #{$md} {
+                width: 25%;
+            }*/
+        }
 
         .slider-category-entry {
             > div {
